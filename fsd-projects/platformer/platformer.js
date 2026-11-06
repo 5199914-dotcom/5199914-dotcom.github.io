@@ -13,7 +13,7 @@ $(function () {
       $(document).on("keyup", handleKeyUp);
       firstTimeSetup = false;
       //start game
-      setInterval(main, 1000 / frameRate);
+      setInterval(main, 750 / frameRate);
     }
 
     // Create walls - do not delete or modify this code
@@ -27,10 +27,22 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    toggleGrid();
 
 
     // TODO 2 - Create Platforms
+    //start
+    createPlatform(200,100,10,500);
+    //start
+    createPlatform(200,600,700,10);
+    createPlatform(230,740,10,-60);
+    createPlatform(900,500,10,155);
+    createPlatform(1036,480,50,10);
+    createPlatform(1243,610,10,10);
+    createPlatform(600, 400, 100,10);
+    //finish
+    createPlatform(289,168,100,10);
+    //finish
 
 
 
